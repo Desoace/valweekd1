@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌹 Happy Rose Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- 🌹 LANDING SCREEN -->
+<section id="landing">
+  <h1>Happy Rose Day, <span id="gf-name">Tanuja</span> 🌹</h1>
+  <p class="subtitle">Rose of memories i guess ❤️</p>
+  <button onclick="startGame()">Pick a Rose</button>
+</section>
+
+<!-- 🌹 GAME AREA -->
+<section id="game" class="hidden">
+  <h2>choose one haha 🌹</h2>
+  <div class="roses">
+    <div class="rose" onclick="revealMemory(0)">🌹</div>
+    <div class="rose" onclick="revealMemory(1)">🌹</div>
+    <div class="rose" onclick="revealMemory(2)">🌹</div>
+    <div class="rose" onclick="revealMemory(3)">🌹</div>
+  </div>
+</section>
+
+<!-- 💌 MEMORY POPUP -->
+<div id="popup" class="hidden">
+  <div class="popup-content">
+    <p id="memory-text"></p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<!-- 💖 FINAL MESSAGE -->
+<section id="final" class="hidden">
+  <h2>One Last Rose For You 🌹</h2>
+  <p id="final-message">
+    You are my cootie gurly ❤️
+  </p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
